@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import './App.css'
+import rock from "../src/images/rock.png"
+import paper from "../src/images/paper.png"
+import scissor from "../src/images/scissor.png"
+
 
 function App() {
   const[gameItems, setGameItems] = useState([
-    {id: 1, name: "rock", imageUrl: "https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/rock.png"}, 
-    {id: 2, name: "paper", imageUrl: "https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/paper.png"}, 
-    {id: 3, name: "scissor", imageUrl: "https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/scissors.png"}
+    {id: 1, name: "rock", imageUrl: rock}, 
+    {id: 2, name: "paper", imageUrl: paper}, 
+    {id: 3, name: "scissor", imageUrl: scissor}
   ])
   const[isShow, setIsShow] = useState(false)
   const[output, setOuptput] = useState("")
